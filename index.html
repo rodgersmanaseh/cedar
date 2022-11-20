@@ -1,73 +1,67 @@
 <html>
+
 <head>
-<title>homepage</title>
+
+<title>login page</title>
+
 <style>
-body{background-color:pink;
-border-bottom-color:red:}
-p1{color:white;
-font-size:30;
-text-align:center}
-p2{color:blue;
-font-size:20;}
-h{background:red;}
-form{background:chocolate;
-border-color:red;
-border-radius:15px;}
-input{background:pink;}
+Body{
+font-family:Calibri,Helvetica,sans-serif;
+background-color:orange;
+}
+button{
+background-color:#4CAF50;
+width:100%;
+color:orange;
+padding:15px;
+margin:10px 0px;
+border:none;
+cursor:pointer;
+}
+form{
+border:3px solid green;
+}
+input[type=text], input[type=password],input[type=date] {
+width:100%;
+margin:8px 0;
+padding:12px 20px;
+display:inline-block;
+border:2px solid green;
+box-sizing:border-box;
+}
+button:hover{
+opacity:1;
+}
+.cancelbtn{
+width:auto;
+padding:10px 18px;
+margin:10px 6px;
+}
+.container{
+padding:25px;
+background-color:lightblue;
+}
+
 </style>
+
 </head>
-
 <body>
-<center><p1>MANASEH.COM</p1></center
-<hr>
+
+<center><h1>ST.RODGERS MANASEH HIGHSCHOOL
+LOGIN</h1><hr></center>
 <form>
-<div>
-<p2>LOGIN TO WEBSITE</p2>
-<div>
-<p3>Phone Number:<p3/>
-<input type="text">
-<div>
-<p3>Password:</p3>
-<input max=10 min=6 type="password">
 
-<div>
-<p4 style="font-size:19;"><u><strong>We would like to know more 
-about you before you login</strong></u></p4>
-<div>
-<p3>Full Names:</p3>
-<input type="text">
-<div>
-<p3>Age:</p3>
-<input max=100 min=18 text="age" type="number">
+<div class="container">
+<label>Username:</label>
+<input type="text" placeholder="Enter Username" name="username" required>
+<label>Password:</label>
+<input type="password" placeholder="Enter Password" name="password" required>
+
+<button type="submit">Login</button>
+<input type="checkbox" checked="checked">Remember me
+<button type="button" class="cancelbtn">Cancel</button>
+Forgot <a href="#">password?</a>
 </div>
-<p3>Date of birth:</p3>
-<input type="date">
-<div>
-<p3>Gender:</p3>
-<input type="radio">Male
-<input type="radio">Female
-<input type="radio">Other
-<div>
-<input type="checkbox"><b>I have read and 
-accepted terms and condition</b> 
-<div>
-Please choose your profile picture 
-<input type="file"><div/>
-
-<input type="time">
-
-</form>
-
-<button id="h" onclick="history.back()">
-Go back
-</button>
 
 </body>
-
-
-
-
-
-
-
 </html>
